@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: none;
+}
+
+#headed {
+    background-color: aqua;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.input-section {
+    display: block;
+    border: 2px solid black;
+    width: 100%;
+    max-width: 450px;
+    background: greenyellow;
+    margin: 80px;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.cen {
+    display: flex;
+    margin-left: 30px;
+    width: 400px;
+    height: 37px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+button {
+    align-items: center;
+    justify-content: center;
+}
+
+.listed{
+    display: flex;
+}
+#til h2{
+   margin-top: 100px;
+   margin-left: 80px;
+}
+
+ul li {
+    list-style: none;
+    font-size: larger;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left:10px;
+}
+
+ul li#checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li#checked::before {
+    background-image: url(checked.png);
+
+}
+#tast{
+    margin-left: 40px;
+}
+
+.tast ul li{
+    border: 2px solid black;
+    margin-top: 15px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    background-color: #b6b2b2;
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color:#555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="headed">
+            <h1>TO-DO LIST</h1>
+        </div>
+        <div class="listed">
+        <div class="input-section">
+        <input type="text" placeholder="Title" class="cen"id="input-box"><br>
+        <textarea name="message" placeholder="&nbsp;Description" class="cen" style="height: 250px;" id="dis-can"></textarea> <br>
+        <button class="cen" style="background-color:rgb(43, 179, 43); cursor:pointer; font-size:17px; color:whitesmoke"; onclick="addTask()">Save</button>
+        </div>
+       <div id="list-section">
+        <div id="til">
+        <h2>Title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Delete</h2>
+        <hr style="width: 600px; margin-left:50px; margin-top:20px">
+        <br>
+        <br>
+    </div>
+    <div class="tast">
+        <ul id="list-container">
+             <li class="checked" > Task 1</li>
+           <!-- <li>Task 2</li>
+            <li>Task 3</li> -->
+        </ul>
+    </div>
+       </div>
+    </div>
+   <script src="script.js"></script>
+    </body>
+</html>
